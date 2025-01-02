@@ -1,0 +1,63 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../public/background/login_bg.png');
+}
+
+.loginContainer {
+  width: 388px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 56px 48px 96px 64px;
+}
+
+.logo {
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: var(--gilroy700);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 19.2px;
+  padding-bottom: 24px;
+}
+
+.buttonWrp {
+  margin-top: 56px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.error {
+  color: var(--error);
+  padding: 28px 0;
+}
+.fieldError {
+  color: var(--error);
+  text-align: left;
+  padding-block: 8px;
+}
+
+@media screen and (max-width: 576px) {
+  .loginContainer {
+    padding: 56px 32px;
+    width: 70vw;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .wrapper {
+    height: 120vh;
+  }
+}

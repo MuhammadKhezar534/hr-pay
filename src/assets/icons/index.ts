@@ -1,0 +1,8 @@
+export { default as Breifcase } from './Breifcase'
+export { default as Profile } from './Profile'
+export { default as User } from './User'
+export { default as Recycle } from './Recycle'
+export { default as Dashboard } from './Dashboard'
+export { default as Logout } from './Logout'
+export { default as Edit } from './Edit'
+export { default as Draft } from './Draft'

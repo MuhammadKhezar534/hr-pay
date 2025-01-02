@@ -1,0 +1,52 @@
+.head-cnt {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  height: 128px;
+  background: #ffffff;
+  border: 1px solid #e1e5e8;
+  padding-inline: '24px';
+}
+.topbarGrid {
+  display: grid;
+  grid-template-columns: 98px 1fr auto;
+  height: 100%;
+  align-items: center;
+}
+.routeName {
+  font-family: var(--gilroy700);
+  font-size: 16px;
+  color: #7c8188;
+}
+.logo {
+  display: grid;
+}
+.avatarGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 12px;
+}
+.avatar {
+  border: 1px solid #e1e1e1;
+  border-radius: 100px;
+  display: flex;
+  height: 31px;
+  padding: 8px;
+  align-items: center;
+  box-sizing: initial;
+}
+
+.name {
+  font-family: var(--gilroy700);
+  font-size: 16px;
+  color: #222222;
+  line-height: initial;
+}
+.designation {
+  font-family: var(--gilroy);
+  font-size: 12px;
+  color: #585c6c;
+  font-weight: 500;
+  line-height: initial;
+}

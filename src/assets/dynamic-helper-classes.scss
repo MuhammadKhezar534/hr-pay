@@ -1,0 +1,40 @@
+$position: (
+    top: "t",
+    right: "r",
+    left: "l",
+    bottom: "b",
+);
+
+$unit: (
+    px: "px",
+);
+
+@for $size from 8 through 96 {
+    @if $size % 8 == 0 {
+        @each $unit, $ut in $unit {
+            @each $position, $pos in $position {
+                .m#{$pos}-#{$size} {
+                    margin-#{$position}: #{$size}#{$ut} !important;
+                }
+                .p#{$pos}-#{$size} {
+                    padding-#{$position}: #{$size}#{$ut} !important;
+                }
+                .gap-#{$size} {
+                    gap: #{$size}#{$ut};
+                }
+            }
+            .mx-#{$size} {
+                margin-inline: #{$size}#{$ut} !important;
+            }
+            .px-#{$size} {
+                padding-inline: #{$size}#{$ut} !important;
+            }
+            .my-#{$size} {
+                margin-block: #{$size}#{$ut} !important;
+            }
+            .py-#{$size} {
+                padding-block: #{$size}#{$ut} !important;
+            }
+        }
+    }
+}
