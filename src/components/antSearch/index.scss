@@ -1,0 +1,22 @@
+.emp-search {
+  position: relative;
+  input {
+    height: 48px;
+    border-radius: 28px !important;
+    z-index: 0;
+  }
+
+  .ant-input-group-addon {
+    background: unset;
+    button {
+      position: absolute;
+      border-radius: 50% !important;
+      height: 48px;
+      width: 48px;
+      padding: 0px;
+      top: 0px;
+      right: 0px;
+      z-index: 2;
+    }
+  }
+}
