@@ -3,7 +3,6 @@ const GET_URL = () => {
   let url = ''
   switch (REACT_APP_ENV.trim()) {
     case 'dev':
-      // url = 'https://poc.hr.net'
       url = 'http://localhost:3008'
 
       break
